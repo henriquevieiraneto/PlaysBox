@@ -1,0 +1,14 @@
+
+#bola{
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;   
+}
+
+#cadastro{
+    display: none;
+}
+
+#login{
+    display: none;
+}
