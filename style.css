@@ -1,0 +1,144 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-color: rebeccapurple;
+    margin: 0;
+}
+
+#container {
+    display: flex;
+    flex-direction: column; /* Organiza as divisões em coluna */
+    height: 100vh; /* Garante que o container ocupe 100% da altura da tela */
+    background-color: white;
+}
+
+#topo {
+    height: 10%; /* Topo ocupa 10% da altura */
+    width: 100%;
+    display: flex;
+    background-color: white;
+}
+
+#topo-esquerda {
+    height: 100%;
+    width: 33.33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000; /* Canto superior esquerdo em preto */
+}
+
+#topo-central {
+    height: 100%;
+    width: 33.33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+#topo-direita {
+    height: 100%;
+    width: 33.33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #003D8C; /* Canto superior direito em azul PlayStation */
+}
+
+#logo-left, #logo-right {
+    height: 50px;
+    width: auto;
+}
+
+#logo {
+    height: 50px;
+    width: auto;
+}
+
+#nome {
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    white-space: nowrap;
+}
+
+#meio {
+    height: 80%; /* Meio ocupa 80% da altura */
+    width: 100%;
+    display: flex;
+}
+
+#meio-esquerda,
+#meio-centro,
+#meio-direita {
+    height: 100%;
+    width: 33.33%;
+    background-color: #D3D3D3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-align: center;
+    flex-direction: column;
+}
+
+#meio-esquerda {
+    padding: 20px;
+}
+
+#meio-centro {
+    flex-direction: column;
+}
+
+#meio-direita {
+    flex-direction: column;
+    padding: 20px;
+}
+
+.botao {
+    background-color: #107C10; /* Cor verde Xbox */
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.botao:hover {
+    background-color: #0a5c0a; /* Cor mais escura para o hover */
+}
+
+#bicho {
+    height: 90%;
+}
+
+#baixo {
+    height: 10%; /* Baixo ocupa 10% da altura */
+    width: 100%;
+    background-color: #69BDC4; /* Cor de fundo da divisão inferior */
+    display: flex;
+    justify-content: space-around; /* Distribui igualmente os itens */
+    align-items: center;
+    margin-bottom: 0 auto;
+}
+
+.baixo-item {
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.baixo-item:hover {
+    text-decoration: underline;
+}
