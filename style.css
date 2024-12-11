@@ -4,7 +4,7 @@ html {
 
 body {
     height: 100%;
-    background-color: rebeccapurple;
+    background-color: #107C10;
     margin: 0;
 }
 
@@ -12,7 +12,7 @@ body {
     display: flex;
     flex-direction: column; /* Organiza as divisões em coluna */
     height: 100vh; /* Garante que o container ocupe 100% da altura da tela */
-    background-color: white;
+    background-color: #107C10;
 }
 
 #topo {
@@ -22,12 +22,15 @@ body {
     background-color: white;
 }
 
-#topo-esquerda {
+#topo-esquerda, #topo-direita {
     height: 100%;
     width: 33.33%;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#topo-esquerda {
     background-color: #000000; /* Canto superior esquerdo em preto */
 }
 
@@ -37,15 +40,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.402);
 }
 
 #topo-direita {
-    height: 100%;
-    width: 33.33%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: #003D8C; /* Canto superior direito em azul PlayStation */
 }
 
@@ -55,7 +53,7 @@ body {
 }
 
 #logo {
-    height: 50px;
+    height: 85px;
     width: auto;
 }
 
@@ -64,6 +62,14 @@ body {
     font-weight: bold;
     color: black;
     white-space: nowrap;
+}
+
+.plays {
+    color: #003D8C; /* Azul PlayStation */
+}
+
+.box {
+    color: #107C10; /* Verde Xbox */
 }
 
 #meio {
@@ -77,13 +83,16 @@ body {
 #meio-direita {
     height: 100%;
     width: 33.33%;
-    background-color: #D3D3D3;
+    background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: black;
+    color: #107C10;
     text-align: center;
     flex-direction: column;
+    font-size: 18px; /* Tamanho da fonte aumentado */
+    font-weight: bold; /* Peso da fonte em negrito */
+    font-family: Arial, sans-serif; /* Fonte Arial para o texto */
 }
 
 #meio-esquerda {
@@ -97,6 +106,11 @@ body {
 #meio-direita {
     flex-direction: column;
     padding: 20px;
+}
+
+#meio-centro img {
+    width: 950px; /* Definindo a largura da imagem como 950px */
+    height: auto; /* A altura é ajustada automaticamente para manter a proporção */
 }
 
 .botao {
@@ -122,10 +136,11 @@ body {
     height: 90%;
 }
 
+/* Mudando o fundo de #baixo para o azul PlayStation */
 #baixo {
     height: 10%; /* Baixo ocupa 10% da altura */
     width: 100%;
-    background-color: #69BDC4; /* Cor de fundo da divisão inferior */
+    background-color: #003D8C; /* Cor de fundo azul PlayStation */
     display: flex;
     justify-content: space-around; /* Distribui igualmente os itens */
     align-items: center;
@@ -133,12 +148,45 @@ body {
 }
 
 .baixo-item {
-    color: white;
-    font-size: 16px;
+    color: white; /* Cor do texto em branco */
+    font-size: 18px; /* Tamanho da fonte aumentado */
+    font-weight: bold; /* Peso da fonte em negrito */
+    font-family: Arial, sans-serif; /* Fonte Arial para o texto */
     text-align: center;
     cursor: pointer;
 }
 
 .baixo-item:hover {
     text-decoration: underline;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    #topo {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #topo-esquerda, #topo-central, #topo-direita {
+        width: 100%;
+        height: auto;
+    }
+
+    #meio {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #meio-esquerda, #meio-centro, #meio-direita {
+        width: 100%;
+        height: auto;
+    }
+
+    .botao {
+        width: auto;
+    }
+
+    #baixo {
+        flex-direction: column;
+    }
 }
