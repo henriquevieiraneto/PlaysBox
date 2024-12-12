@@ -1,5 +1,5 @@
 html {
-    height: 100%; /* O elemento html ocupa 100% da altura da janela */
+    height: 123%; /* O elemento html ocupa 100% da altura da janela */
 }
 
 body {
@@ -11,61 +11,60 @@ body {
     display: flex; /* Ativa o layout flexbox */
     flex-direction: column; /* Organiza os itens dentro do container em uma coluna */
     height: 100%; /* O container ocupa 100% da altura da janela */
-   
+
 }
 
 #topo {
-    height: 10%; /* A seção topo ocupa 10% da altura da tela */
+    height: 25%; /* A seção topo ocupa % da altura da tela */
     width: 100%; /* A largura da seção topo ocupa 100% da tela */
     display: flex; /* Ativa o layout flexbox dentro da seção topo */
     background-color: white; /* Cor de fundo da seção topo: branco */
 }
 
-#topo-esquerda, #topo-direita {
-    height: 100%; /* As seções à esquerda e direita ocupam 100% da altura do topo */
-    width: 30%; /* Cada seção ocupa um terço da largura do topo */
+#topo-esquerda, #topo-direita, #topo-central{
     display: flex; /* Ativa o layout flexbox dentro dessas seções */
     align-items: center; /* Alinha os itens verticalmente ao centro */
     justify-content: center; /* Alinha os itens horizontalmente ao centro */
 }
 
 #topo-esquerda {
-    background-color: #000000; /* Cor de fundo da seção esquerda: preto */
-    border-radius: 100px; /* Arredonda o canto superior esquerdo */
+    height: 100%; /* A seção central ocupa 100% da altura do topo */
+    width: 33.33%; /* A seção central ocupa um terço da largura do topo */
+    background: linear-gradient(to right, #49ec64, #49ec64);
 }
+
 
 #topo-central {
     height: 100%; /* A seção central ocupa 100% da altura do topo */
-    width: 40%; /* A seção central ocupa um terço da largura do topo */
+    width: 33.33%; /* A seção central ocupa um terço da largura do topo */
     display: flex; /* Ativa o layout flexbox dentro da seção central */
     align-items: center; /* Alinha os itens verticalmente ao centro */
     justify-content: center; /* Alinha os itens horizontalmente ao centro */
-    background-color: rgba(255, 255, 255, 0.402); /* Cor de fundo semitransparente (40%) */
+    background: linear-gradient(to right, #49ec64, #4D79FF);
 }
-
 #topo-direita {
-    background-color: #1870e5; /* Cor de fundo da seção direita: azul PlayStation */
-    border-radius: 100px; /* Arredonda o canto superior direito */
+    height: 100%; /* A seção central ocupa 100% da altura do topo */
+    width: 33.33%; /* A seção central ocupa um terço da largura do topo */
+    background: linear-gradient(to right, #4D79FF, #4D79FF);
 }
 
-#logo-left {
-    height: 50px; /* A altura do logo à esquerda e à direita será 50px */
+#logo-left  {
+    height: 122px; /* A altura do logo à esquerda e à direita será 50px */
     width: auto; /* A largura será ajustada automaticamente para manter a proporção */
 }
 #logo-right {
-    height: 65px; /* A altura do logo à esquerda e à direita será 50px */
+    height: 125px; /* A altura do logo à esquerda e à direita será 50px */
     width: auto; /* A largura será ajustada automaticamente para manter a proporção */
 }
 
 #logo {
-    height: 100%; /* A altura do logo será 85px */
+    height: 185px; /* A altura do logo será 85px */
     width: auto; /* A largura será ajustada automaticamente para manter a proporção */
 }
 
 #nome {
-    font-size: 30px; /* O tamanho da fonte será 30px */
+    font-size: 50px; /* O tamanho da fonte será px */
     font-weight: bold; /* O texto será em negrito */
-    color: black; /* A cor do texto será preta */
     white-space: nowrap; /* O texto não quebrará em várias linhas */
 }
 
@@ -78,37 +77,44 @@ body {
 }
 
 #meio {
-    height: 90%; /* A seção do meio ocupa 80% da altura da tela */
+    height: 100%; /* A seção do meio ocupa 80% da altura da tela */
     width: 100%; /* A largura da seção do meio ocupa 100% da tela */
     display: flex; /* Ativa o layout flexbox dentro da seção do meio */
 }
 
 #meio-esquerda, #meio-centro, #meio-direita {
-    height: 100%; /* Cada uma das seções no meio ocupa 100% da altura */
-    width: 33.33%; /* Cada uma das seções no meio ocupa um terço da largura */
-    background-color: #fff; /* A cor de fundo de cada seção será branca */
+    background: linear-gradient(to right, #26ac31, #4d79ff);
     display: flex; /* Ativa o layout flexbox dentro das seções do meio */
     justify-content: center; /* Alinha os itens verticalmente ao centro */
     align-items: center; /* Alinha os itens horizontalmente ao centro */
-    color: #107C10; /* A cor do texto será verde Xbox */
+    color: #000000; /* A cor do texto será verde Xbox */
     text-align: center; /* O texto será centralizado horizontalmente */
     flex-direction: column; /* Organiza os itens dentro das seções do meio em uma coluna */
-    font-size: 18px; /* O tamanho da fonte será 18px */
+    font-size: 25px; /* O tamanho da fonte será 18px */
     font-weight: bold; /* O texto será em negrito */
     font-family: Arial, sans-serif; /* A fonte usada será Arial, com uma alternativa sans-serif */
 }
 
 #meio-esquerda {
+    height: auto; /* Cada uma das seções no meio ocupa 100% da altura */
+    width: 33.33%; /* Cada uma das seções no meio ocupa um terço da largura */
     padding: 20px; /* Adiciona preenchimento de 20px dentro da seção esquerda */
+    background: linear-gradient(to right, #49ec64, #49ec64);
 }
 
 #meio-centro {
+    height: auto; /* Cada uma das seções no meio ocupa 100% da altura */
+    width: 33.33%; /* Cada uma das seções no meio ocupa um terço da largura */
     flex-direction: column; /* Organiza os itens dentro da seção central em uma coluna */
+    background: linear-gradient(to right, #49ec64, #4D79FF);
 }
 
 #meio-direita {
+    height: auto; /* Cada uma das seções no meio ocupa 100% da altura */
+    width: 33.33%; /* Cada uma das seções no meio ocupa um terço da largura */
     flex-direction: column; /* Organiza os itens dentro da seção direita em uma coluna */
     padding: 20px; /* Adiciona preenchimento de 20px dentro da seção direita */
+    background: linear-gradient(to right, #4D79FF, #4D79FF);
 }
 
 #meio-centro img {
@@ -120,7 +126,7 @@ body {
     background-color: #107C10; /* Cor de fundo do botão: verde Xbox */
     border: none; /* Remove a borda padrão do botão */
     color: white; /* A cor do texto do botão será branca */
-    padding: 12px 24px; /* Adiciona preenchimento de 12px na vertical e 24px na horizontal */
+    padding: 15px 30px; /* Adiciona preenchimento de 12px na vertical e 24px na horizontal */
     text-align: center; /* O texto dentro do botão será centralizado */
     text-decoration: none; /* Remove qualquer decoração do texto (como sublinhado) */
     display: inline-block; /* Exibe o botão como um bloco de linha */
@@ -139,28 +145,7 @@ body {
     height: 90%; /* A seção bicho ocupa 90% da altura disponível */
 }
 
-#baixo {
-    height: 10%; /* A seção inferior ocupa 10% da altura da tela */
-    width: 100%; /* A largura da seção inferior ocupa 100% da tela */
-    background-color: #003D8C; /* Cor de fundo da seção inferior: azul PlayStation */
-    display: flex; /* Ativa o layout flexbox dentro da seção inferior */
-    justify-content: space-around; /* Distribui igualmente os itens dentro da seção */
-    align-items: center; /* Alinha os itens verticalmente ao centro */
-    margin-bottom: 0 auto; /* Remove as margens da parte inferior e centraliza a seção */
-}
 
-.baixo-item {
-    color: white; /* A cor do texto dos itens da seção inferior será branca */
-    font-size: 18px; /* O tamanho da fonte será 18px */
-    font-weight: bold; /* O texto será em negrito */
-    font-family: Arial, sans-serif; /* A fonte usada será Arial, com uma alternativa sans-serif */
-    text-align: center; /* O texto será centralizado horizontalmente */
-    cursor: pointer; /* O cursor será alterado para pointer quando passar o mouse sobre o item */
-}
-
-.baixo-item:hover {
-    text-decoration: underline; /* Aplica um sublinhado quando o mouse passa sobre o item */
-}
 
 @media (max-width: 768px) {
     /* Define o layout para telas menores que 768px */
@@ -186,9 +171,5 @@ body {
 
     .botao {
         width: auto; /* O botão terá uma largura automática em telas menores */
-    }
-
-    #baixo {
-        flex-direction: column; /* Organiza os itens da seção inferior em uma coluna em vez de linha */
     }
 }
